@@ -1,0 +1,17 @@
+class palindrome{
+	public static void main(String args[]){
+		int original, reverse=0, temp = 0 ;
+		original = Integer.parseInt(args[0]);
+		while(original>0){
+			temp=original%10;
+			reverse=10*reverse+temp;
+			original=original/10;
+		}
+		if(reverse==original){
+			System.out.println("palindrome");
+		}
+		else{
+			System.out.println("not palindrome");
+		}
+	}
+}
